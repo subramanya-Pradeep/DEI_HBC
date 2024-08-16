@@ -183,6 +183,45 @@
             border-radius: 10px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
+        header img.logo {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            width: 100px;
+            height: auto;
+        }
+
+        @media screen and (max-width: 768px) {
+            header img.logo {
+                width: 60px; /* Smaller size for mobile */
+                top: 15px;  /* Adjust top position */
+                right: 15px; /* Adjust right position */
+            }
+            
+            header h1 {
+                font-size: 2em; /* Adjust font size for mobile */
+            }
+            
+            header p {
+                font-size: 1em; /* Adjust font size for mobile */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            header img.logo {
+                width: 50px; /* Even smaller size for very small screens */
+                top: 10px;  /* Further adjust top position */
+                right: 10px; /* Further adjust right position */
+            }
+            
+            header h1 {
+                font-size: 1.8em; /* Adjust font size for small screens */
+            }
+            
+            header p {
+                font-size: 0.9em; /* Adjust font size for small screens */
+            }
+        }
 
     </style>
 </head>
